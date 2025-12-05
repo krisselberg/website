@@ -50,7 +50,7 @@ export default function CurrentStatus() {
 
           <div className="space-y-3">
             <div className="flex items-start gap-4">
-              <span className="text-gray-500 flex-shrink-0 w-[140px]">
+              <span className="text-gray-500 flex-shrink-0 w-[160px]">
                 Building:
               </span>
               <span className="text-gray-300">
@@ -59,7 +59,7 @@ export default function CurrentStatus() {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="text-gray-500 flex-shrink-0 w-[140px]">
+              <span className="text-gray-500 flex-shrink-0 w-[160px]">
                 Writing:
               </span>
               <span className="text-gray-300">
@@ -69,7 +69,7 @@ export default function CurrentStatus() {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="text-gray-500 flex-shrink-0 w-[140px]">
+              <span className="text-gray-500 flex-shrink-0 w-[160px]">
                 Reading:
               </span>
               <span className="text-gray-300">
@@ -78,7 +78,7 @@ export default function CurrentStatus() {
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="text-gray-500 flex-shrink-0 w-[140px]">
+              <span className="text-gray-500 flex-shrink-0 w-[160px]">
                 Listening:
               </span>
               <div className="flex items-center gap-3">

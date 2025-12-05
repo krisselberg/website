@@ -20,11 +20,12 @@ export default function Header() {
                 Books
               </button>
             </Tooltip>
-            <Tooltip content="Coming Soon..." position="bottom">
-              <button className="text-white text-lg font-medium hover:opacity-80 transition-opacity duration-200 cursor-not-allowed">
-                Blog
-              </button>
-            </Tooltip>
+            <Link
+              href="/blog"
+              className="text-white text-lg font-medium hover:opacity-80 transition-opacity duration-200"
+            >
+              Blog
+            </Link>
           </nav>
         </div>
       </Container>
