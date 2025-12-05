@@ -18,7 +18,7 @@ export default function Achievements() {
       linkText: "UniversalAGI",
     },
     {
-      text: "Worked with Sebastian Thrun and Eric Schmidt on applications of video generation models",
+      text: "Worked on video generation models with Sebastian Thrun and Eric Schmidt at Hooglee",
       date: "May-Aug 2024",
     },
     {
@@ -47,6 +47,8 @@ export default function Achievements() {
     {
       text: "Interned at the Qatar Computing Research Institute researching and building deepfake detection models",
       date: "May-Jul 2021",
+      link: "https://qcri.hbku.edu.qa",
+      linkText: "Qatar Computing Research Institute",
     },
     {
       text: 'Read a book a week for a year (mostly self-help and "wantrepreneur" books)',
@@ -190,7 +192,11 @@ export default function Achievements() {
                               </>
                             ) : achievement.link && achievement.linkText ? (
                               <>
-                                {achievement.text.split(achievement.linkText)[0]}
+                                {
+                                  achievement.text.split(
+                                    achievement.linkText
+                                  )[0]
+                                }
                                 <a
                                   href={achievement.link}
                                   target="_blank"
@@ -199,7 +205,11 @@ export default function Achievements() {
                                 >
                                   {achievement.linkText}
                                 </a>
-                                {achievement.text.split(achievement.linkText)[1]}
+                                {
+                                  achievement.text.split(
+                                    achievement.linkText
+                                  )[1]
+                                }
                               </>
                             ) : (
                               achievement.text

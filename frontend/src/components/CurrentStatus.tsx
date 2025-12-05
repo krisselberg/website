@@ -54,7 +54,7 @@ export default function CurrentStatus() {
                 Building:
               </span>
               <span className="text-gray-300">
-                Foundational Models for Physics Simulations
+                Foundation Models for Physics Simulations
               </span>
             </div>
 
