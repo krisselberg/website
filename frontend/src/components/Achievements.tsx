@@ -33,8 +33,14 @@ const achievements: Achievement[] = [
     date: "May–Aug '24",
   },
   {
-    text: "Published a paper in AR + flew to Hawaii to present it at CHI",
+    text: "Worked as a Growth Engineer at Emerge Tools (acq. Sentry)",
+    date: "Jan–Apr '24",
+  },
+  {
+    text: "Published an Augmented Reality paper in CHI '24",
     date: "May '24",
+    link: "https://arxiv.org/abs/2507.05616",
+    linkText: "CHI '24",
   },
   {
     text: "Backpacked Western Europe with my best friend for a month",
@@ -90,6 +96,31 @@ function AchievementRow({ achievement }: { achievement: Achievement }) {
             &quot;wantrepreneur&quot;
           </a>{" "}
           books)
+        </>
+      );
+    }
+
+    if (achievement.text.includes("Emerge Tools")) {
+      return (
+        <>
+          Worked as a Growth Engineer at{" "}
+          <a
+            href="https://emergetools.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            Emerge Tools
+          </a>{" "}
+          (acq. Sentry), writing viral technical deep dives like{" "}
+          <a
+            href="https://www.emergetools.com/deep-dives/general-motors"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            this one
+          </a>
         </>
       );
     }
