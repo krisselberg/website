@@ -97,7 +97,7 @@ export default function NowListening() {
     <section className="pb-8">
       <Container>
         <div className="bg-black/80 border border-gray-800 rounded-xl px-5 py-4 flex items-center gap-4 shadow-inner shadow-black/40">
-          <div className="text-green-400 text-lg">♫</div>
+          <div className="text-green-400 text-xs uppercase tracking-[0.2em]">playing now</div>
 
           <div className="flex-1">
             <p className="text-green-400 text-xs uppercase tracking-[0.2em] mb-1">
