@@ -44,7 +44,7 @@ export default function CurrentStatus() {
         <div className="font-mono text-sm">
           <div className="mb-4">
             <div className="text-gray-500 text-xs">
-              Last updated: November 22, 2025
+              Last updated: December 25, 2025
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export default function CurrentStatus() {
                 Reading:
               </span>
               <span className="text-gray-300">
-                <em>The Count of Monte Cristo</em> by Alexandre Dumas
+                <em>The Technological Republic</em> by Alex Karp
               </span>
             </div>
 
