@@ -5,23 +5,27 @@ import Link from "next/link";
 type BlogPost = {
   slug: string;
   title: string;
-  description: string;
+  description?: string;
   date: string;
   status: "published" | "draft";
-  readTime?: string;
 };
 
 const posts: BlogPost[] = [
   {
-    slug: "direct-numerical-simulation",
-    title:
-      "Why Direct Numerical Simulation Remains Computationally Intractable",
-    description:
-      "An exploration of the computational challenges in simulating turbulent fluid flows and why we still can't brute-force the Navier-Stokes equations.",
-    date: "Coming Soon",
-    status: "draft",
-    readTime: "~10 min",
+    slug: "2026-goals",
+    title: "2026 Goals",
+    date: "January 3, 2026",
+    status: "published",
   },
+  // {
+  //   slug: "direct-numerical-simulation",
+  //   title:
+  //     "Why Direct Numerical Simulation Remains Computationally Intractable",
+  //   description:
+  //     "An exploration of the computational challenges in simulating turbulent fluid flows and why we still can't brute-force the Navier-Stokes equations.",
+  //   date: "Coming Soon",
+  //   status: "draft",
+  // },
 ];
 
 function BlogCard({ post }: { post: BlogPost }) {
@@ -41,23 +45,19 @@ function BlogCard({ post }: { post: BlogPost }) {
         </span>
       )}
 
-      <div className="flex items-center gap-3 text-xs font-mono text-gray-500 mb-3">
+      <div className="text-xs font-mono text-gray-500 mb-3">
         <span>{post.date}</span>
-        {post.readTime && (
-          <>
-            <span className="text-gray-700">·</span>
-            <span>{post.readTime}</span>
-          </>
-        )}
       </div>
 
       <h2 className="text-lg font-medium text-white mb-2 group-hover:text-green-400 transition-colors">
         {post.title}
       </h2>
 
-      <p className="text-gray-400 text-sm leading-relaxed">
-        {post.description}
-      </p>
+{post.description && (
+        <p className="text-gray-400 text-sm leading-relaxed">
+          {post.description}
+        </p>
+      )}
 
       {!isDraft && (
         <div className="mt-4 text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
